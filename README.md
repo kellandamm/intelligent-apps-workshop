@@ -1,42 +1,62 @@
-# ⚙️ moaw-workshop-advanced
+# Introduction to Building AI Apps
 
-This repository contains a simple starter template for creating a [MOAW](https://moaw.dev) workshop.
+This repository introduces and helps organizations get started with building AI Apps and incorporating Large Language Models (LLMs) into them.
 
-This template includes the following:
-- Built-in MOAW workshop documentation, located in the `docs` folder.
-- A `.devcontainer` folder for setting up the workshop environment.
-- A GitHub Actions workflow for automatically creating packages for the workshop (for intermediate steps, solution, etc).
-- A [`setup-project.sh`](scripts/repo/setup-project.sh) script for setting up the project for the workshop.
+## Workshop Agenda
 
-## How to use this template
+The objective of this workshop is to practice realistic AI orchestration scenarios and to learn how to build intelligent apps.
+At the end of the workshop you will: 
+* Know how to use prompt engineering techniques for effective generative AI responses on OpenAI
+* Understand the implications of the usage of tokens and embeddings when interacting with an LLM
+* Have experience in leveraging AI orchestrators like Langchain/ Semantic Kernel with Azure OpenAI
+* Have evaluated different vector stores like Qdrant or Azure AI Search to enhance LLM responses with your data and context
+* Know how to turn a business scenario with data, context and user input into an intelligent application on Azure
 
-### Initial setup
+### 🌅 Morning (9:00 – 12:15)
 
-1. Select the `Use this template` button on GitHub to create a new repository from this template.
-2. Name your repository and select `Create repository from template`.
+> *Focus: Introduction, First Steps & Prompt Engineering*
 
-### Creating your workshop
+* 📣 Intro (30min)
+  * Introductions & Setting Expectations
+  * Use Case Ideation & Brainstorming
+* 📣 [Intro to Azure OpenAI, Prompt Engineering & Demos (105min)](presentations/README.md)
+  * Azure OpenAI Service
+  * Demo(s)
+  * Break
+  * 🧑🏼‍💻 [Lab #1 - Hands-on with Prompt Engineering Exercises](labs/01-prompts/README.md)
+* 📣 [Intro to AI Orchestration (60min)](presentations/README.md)
+  * AI Orchestration
+  * Demo(s)
 
-From this point, you can start creating your workshop content in the `main` branch.
-The following are some of the steps you can take to customize your workshop:
-- Update the `docs` folder with your workshop content. See this [link](https://moaw.dev/workshop/create-workshop/?step=2#edit-the-workshop-metadata) for more information on how to author your workshop content.
-- Update the `.devcontainer` folder with your workshop environment.
-- Update the `scripts/repo/create-packages.sh` script to create packages for your workshop (see `TODO:` notes in the script).
-- Update the `scripts/repo/setup-project.sh` script to create the GitHub template for your workshop (see `TODO:` notes in the script). In your workshop documentation, you should include instructions for users to run this script to set up their project.
+### 🌆 Afternoon (1:15 – 4:30)
 
-To make it easier to edit your workshop docs, you can use the [MOAW CLI](https://github.com/microsoft/moaw/tree/main/packages/cli):
+> *Focus: Building AI Apps & Incorporating LLMs*
 
-- Run `moaw serve` to preview your workshop content locally, with live reload.
-- Run `moaw link docs/workshop.md` once your workshop is complete to generate a shareable link to your workshop.
+* 📣 [Intro to AI Orchestration Continued (135min)](presentations/README.md)
+  * 💻 [Lab #2 - Hands-on with Integrating AI Exercises](labs/02-integrating-ai/README.md)
+  * 💻 [Lab #3 - Hands-on with AI Orchestration Exercises](labs/03-orchestration/README.md)
+  * 💻 [Lab #4 - Hands-on with Deploying AI Exercises](labs/04-deploy-ai/README.md)
+  * Break
+* Wrapping-up (60min)
+  * Use Case Validation
+  * QnA & Closing Remarks
 
-## All MOAW templates
 
-- [moaw-workshop-basic](https://github.com/sinedied/moaw-workshop-basic): A basic template for creating a MOAW workshop, only containing the workshop documentation and devcontainer setup.
-- [moaw-workshop-advanced](https://github.com/sinedied/moaw-workshop-advanced): A more advanced template for creating a MOAW workshop from a complete project repository. In addition to the workshop documentation and devcontainer setup, it includes template scripts to create one or more packages and setup the initial project structure.
+## Getting Started with Workshop Preparation
+
+The steps in this section will take you through setting up Azure OpenAI and some configuration files so that you can complete all of the hands-on labs successfully.
+
+* [Preparation](labs/00-setup/README.md)
+
+## Post Workshop Next Steps
+
+When you're done with this workshop and ready to move on, the following may be useful.
+
+* [Next Steps](docs/next_steps.md)
 
 ## Contributing
 
-This project welcomes contributions and suggestions. Most contributions require you to agree to a
+This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
 the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
 
@@ -50,8 +70,8 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 
 ## Trademarks
 
-This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft
-trademarks or logos is subject to and must follow
+This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft 
+trademarks or logos is subject to and must follow 
 [Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
 Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
 Any use of third-party trademarks or logos are subject to those third-party's policies.
